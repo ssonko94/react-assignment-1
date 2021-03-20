@@ -1,9 +1,12 @@
 import "./App.css";
+import Heading from "./components/header/heading";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="heading-primary">Hello World</h1>
+      <Heading title="Ssembatya Dennis" className="heading-secondary" />
+      <Heading title="Nambooze Damali" />
+      <Heading title="Kasenene Jorum" />
     </div>
   );
 }
