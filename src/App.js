@@ -1,12 +1,16 @@
 import "./App.css";
-import Heading from "./components/header/heading";
+import Subheading from "./components/header/heading";
+import Button from "./components/button/button";
 
 function App() {
   return (
     <div className="App">
-      <Heading title="Ssembatya Dennis" className="heading-secondary" />
-      <Heading title="Nambooze Damali" />
-      <Heading title="Kasenene Jorum" />
+      <Subheading title="React is the future" />
+      <Subheading
+        title="React is a library of javascript"
+        className="heading-secondary"
+      />
+      <Button className="btn" title="Click Me" />
     </div>
   );
 }
