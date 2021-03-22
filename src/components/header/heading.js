@@ -8,9 +8,8 @@ import "./heading.css";
 export default class Subheading extends React.Component {
   render() {
     const className = this.props.className || "subheadingClass";
-    const TestId = "subHeadingTest";
     return (
-      <h2 className={className} TestId={TestId}>
+      <h2 className={className} data-testid="subHeadingTest">
         {this.props.title}
       </h2>
     );

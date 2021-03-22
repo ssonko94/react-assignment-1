@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders learn react link", () => {
+test("checks if element has a specific test id", () => {
   render(<App />);
-  const linkElement = screen.getAllByTestId("subHeadingTest");
+  const linkElement = screen.getByTestId("AppTest");
   expect(linkElement).toBeInTheDocument();
 });

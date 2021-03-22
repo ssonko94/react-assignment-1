@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import Subheading from "../heading";
+import Button from "../button";
 
 test("checks if element has a specific test id", () => {
-  render(<Subheading />);
-  const linkElement = screen.getByTestId("subHeadingTest");
+  render(<Button />);
+  const linkElement = screen.getByTestId("buttonTest");
   expect(linkElement).toBeInTheDocument();
 });
